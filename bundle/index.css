@@ -1,0 +1,178 @@
+/* line 5, /home/dhana/Documents/Scout-App/bower_components/compass-mixins/lib/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, /home/dhana/Documents/Scout-App/bower_components/compass-mixins/lib/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, /home/dhana/Documents/Scout-App/bower_components/compass-mixins/lib/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, /home/dhana/Documents/Scout-App/bower_components/compass-mixins/lib/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, /home/dhana/Documents/Scout-App/bower_components/compass-mixins/lib/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, /home/dhana/Documents/Scout-App/bower_components/compass-mixins/lib/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+
+/* line 103, /home/dhana/Documents/Scout-App/bower_components/compass-mixins/lib/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, /home/dhana/Documents/Scout-App/bower_components/compass-mixins/lib/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, /home/dhana/Documents/Scout-App/bower_components/compass-mixins/lib/compass/reset/_utilities.scss */
+elements-of-type(html5-block) {
+  display: block;
+}
+
+/* line 7, /home/dhana/Desktop/Todos own/sass/index.scss */
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+/* line 12, /home/dhana/Desktop/Todos own/sass/index.scss */
+body {
+  background-color: #f3f3f7;
+}
+
+/* line 16, /home/dhana/Desktop/Todos own/sass/index.scss */
+.todos {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin: auto;
+}
+
+/* line 22, /home/dhana/Desktop/Todos own/sass/index.scss */
+.todos > .header {
+  background-color: teal;
+  color: white;
+  font-size: 30px;
+  font-weight: bolder;
+  text-align: center;
+  padding: 5px;
+}
+
+/* line 31, /home/dhana/Desktop/Todos own/sass/index.scss */
+.todos > .select {
+  display: flex;
+  margin-top: 2px;
+}
+
+/* line 34, /home/dhana/Desktop/Todos own/sass/index.scss */
+.todos > .select > button {
+  background-color: #f7f7fc;
+  color: teal;
+  cursor: pointer;
+  padding: 5px;
+  width: 34%;
+}
+
+/* line 40, /home/dhana/Desktop/Todos own/sass/index.scss */
+.todos > .select > button:hover {
+  background-color: teal;
+  color: white;
+}
+
+/* line 47, /home/dhana/Desktop/Todos own/sass/index.scss */
+.todos > .body {
+  flex-grow: 1;
+}
+
+/* line 49, /home/dhana/Desktop/Todos own/sass/index.scss */
+.todos > .body > .enterTodo {
+  border: teal;
+  padding: 8px;
+  width: 100%;
+}
+
+/* line 56, /home/dhana/Desktop/Todos own/sass/index.scss */
+.todos > .body > .displayTodos > .todo {
+  display: flex;
+  margin-top: 2px;
+  padding: 5px;
+  background-color: #f7f7fc;
+  color: darkgreen;
+  font-weight: bold;
+  align-items: center;
+  font-size: 17px;
+}
+
+/* line 66, /home/dhana/Desktop/Todos own/sass/index.scss */
+.todos > .body > .displayTodos > .todo.false {
+  color: red;
+}
+
+/* line 70, /home/dhana/Desktop/Todos own/sass/index.scss */
+.todos > .body > .displayTodos > .todo > .text {
+  flex-grow: 1;
+}
+
+/* line 74, /home/dhana/Desktop/Todos own/sass/index.scss */
+.todos > .body > .displayTodos > .todo > .toggle {
+  background-color: #f7f7fc;
+  color: teal;
+}
+
+/* line 77, /home/dhana/Desktop/Todos own/sass/index.scss */
+.todos > .body > .displayTodos > .todo > .toggle:hover {
+  background-color: teal;
+  color: white;
+  cursor: pointer;
+}
+
+/* line 84, /home/dhana/Desktop/Todos own/sass/index.scss */
+.todos > .body > .displayTodos > .todo > .delete {
+  background-color: #f7f7fc;
+  color: teal;
+  margin: 2px;
+}
+
+/* line 88, /home/dhana/Desktop/Todos own/sass/index.scss */
+.todos > .body > .displayTodos > .todo > .delete:hover {
+  background-color: teal;
+  color: white;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=../bundle/index.map */

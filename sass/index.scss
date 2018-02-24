@@ -1,0 +1,97 @@
+@import 'compass/reset';
+
+$backGroundColor: rgb(243, 243, 247);
+$headerColor: teal;
+$bodyColor: rgb(247, 247, 252);
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $backGroundColor;
+}
+
+.todos {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: auto; 
+
+    > .header {
+        background-color: $headerColor;
+        color: white;
+        font-size: 30px;
+        font-weight: bolder;
+        text-align: center;
+        padding: 5px;
+    }
+
+    > .select {
+        display: flex;
+        margin-top: 2px;
+        > button {
+            background-color: $bodyColor;
+            color: $headerColor;
+            cursor: pointer;
+            padding: 5px;
+            width: 34%;
+            &:hover {
+                background-color: $headerColor;
+                color: white;
+            }
+        }
+    }   
+
+    > .body {
+        flex-grow: 1;
+        > .enterTodo {
+            border: $headerColor;
+            padding: 8px;
+            width: 100%;
+        }
+
+        > .displayTodos {
+            > .todo {
+                display: flex;
+                margin-top: 2px;
+                padding: 5px;
+                background-color: $bodyColor;
+                color: darkgreen;
+                font-weight: bold;  
+                align-items: center;
+                font-size: 17px;
+
+                &.false{
+                    color: red;
+                }
+
+                > .text {
+                    flex-grow: 1;
+                }
+
+                > .toggle {
+                    background-color: $bodyColor;
+                    color: $headerColor;
+                    &:hover {
+                        background-color: $headerColor;
+                        color: white;
+                        cursor: pointer;
+                    }               
+                }
+
+                > .delete {
+                    background-color: $bodyColor;
+                    color: $headerColor;
+                    margin: 2px;
+                    &:hover {
+                        background-color: $headerColor;
+                        color: white;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
